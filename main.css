@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #151d27;
+    color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 2px solid #c508b5;
+    background-color: #1f2933;
+    margin-bottom: 56px;
+}
+
+.submenu {
+    display: none;
+    border: 2px solid #c508b5;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: #c508b5;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Divide o conteúdo em duas colunas */
+    column-gap: 20px; /* Define o espaço entre as colunas */
+}
+
+.container .conteudo h2,
+.container .conteudo p {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1em;
+}
+
+.conteudo img {
+    max-width: 100%;
+}
+
+.sobre {
+    margin-bottom: 56px;
+}
+
+.sobre img {
+    width: 100%;
+    float: right;
+}
+
+section {
+    padding: 48px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-de-jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 2%; /* Define o espaço entre as colunas em uma grade CSS. Neste caso, o espaço é 2% da LARGURA da área de grade. */
+    row-gap: 5%; /* Define o espaço entre as linhas em uma grade CSS. Neste caso, o espaço é 5% da ALTURA da área de grade */
+}
+
+.lista-de-jogos li {
+    list-style: none;
+    max-width: 100%;
+}
+
+.lista-de-jogos li h3 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.lista-de-jogos li img {
+    max-width: 100%;
+}
+
+.lista-de-jogos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #c508b5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 20px; /* Adiciona um preenchimento nas laterais para telas menores */
+    }
+
+    .submenu {
+        width: 100%; /* Altera a largura do submenu para preencher a tela */
+        left: auto; /* Remove a posição absoluta do submenu */
+        top: auto; /* Remove a posição absoluta do submenu */
+    }
+
+    .conteudo {
+        grid-template-columns: 100%; /* Altera para uma única coluna em dispositivos menores */
+    }
+
+    .container .conteudo h2,
+    .container .conteudo p {
+        text-align: left; /* Alinha o texto à esquerda em telas menores */
+        font-size: 1em; /* Reduz o tamanho da fonte */
+    }
+
+    .sobre img {
+        float: none; /* Remove a flutuação da imagem */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 8px 0 0;
+        margin-bottom: 32px;
+    }
+
+    .menu > li {
+        float: none; /* Removendo a flutuação dos itens do menu */
+        width: 100%; /* Definindo a largura dos itens do menu para preencher a tela */
+        text-align: center; /* Centralizando o texto no menu */
+    }
+
+    .conteudo {
+        grid-template-columns: 100%; /* Altera para uma única coluna em dispositivos menores */
+    }
+
+    .container .conteudo h2,
+    .container .conteudo p {
+        text-align: left; /* Alinha o texto à esquerda em telas menores */
+        font-size: 1em; /* Reduz o tamanho da fonte */
+    }
+
+    .sobre img {
+        float: none; /* Remove a flutuação da imagem */
+        width: 100%; /* Define a largura da imagem para preencher a tela */
+        margin-bottom: 16px; /* Adiciona uma margem inferior à imagem */
+    }
+
+    section {
+        padding: 24px; /* Reduzindo o preenchimento das seções */
+    }
+
+    .lista-de-jogos {
+        grid-template-columns: 100%; /* Altera para uma única coluna em dispositivos menores */
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+    }
+
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+}

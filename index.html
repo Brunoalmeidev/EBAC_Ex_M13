@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+
+    <title>BDA Games</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>BDA Games</h1>
+        <form>
+            <input type="search" placeholder="Pesquise no site">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <div class="botao-menu">
+        <button>Abrir Menu</button>
+    </div>
+    <nav class="container">
+        <ul class="menu">
+            <li>
+                Produtos em Destaque
+                    
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Steam</a>
+                    </li>
+                    <li>
+                        <a href="#">Epic</a>
+                    </li>
+                    <li>
+                        <a href="#">PlayStation</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Plataformas
+                    
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Steam</a>
+                    </li>
+                    <li>
+                        <a href="#">Epic</a>
+                    </li>
+                    <li>
+                        <a href="#">PlayStation</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Sobre a loja
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+<section class="sobre">
+    <div class="container conteudo">
+        <img src="./img/loja.jpg" alt="Imagem da loja BDA Games">
+            <div>
+                <h2>Sobre a BDA Games</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem aut omnis? Labore quo eos veniam, quidem numquam voluptates autem, eligendi similique explicabo dignissimos nobis dicta illo doloremque libero architecto.</p>
+            </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>Jogos</h2>
+        <ul class="conteudo lista-de-jogos">
+            <li>
+                <img src="./img/red_dead_redemption_2.jfif" alt="">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/dark_souls.webp" alt="">
+                    <h3>Dark Souls</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/death_stranding.jpg" alt="">
+                    <h3>Death Stranding</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/destiny.jpg" alt="">
+                    <h3>Destiny</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/elden_ring.webp" alt="">
+                    <h3>Elden Ring</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/sekiro.png" alt="">
+                    <h3>Sekiro: Shadows Die Twice</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+
+            <li>
+                <img src="./img/r_evil_2.webp" alt="">
+                    <h3>Resident Evil 2</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <strong>R$ 399,00</strong>
+                    <button type="button">Comprar</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
